@@ -9,11 +9,16 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
-
     <!-- Custom Styles-->
     <link href="assets/css/custom-styles.css" rel="stylesheet" />
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <style>
+    div.scroll {
+      height: 280px;
+      overflow: auto;
+    }
+    </style>
   </head>
 
   <body>
@@ -32,17 +37,15 @@
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-                        <!-- <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i> -->
-                        <span> Mehmet Arici <i class="fa fa-caret-down"> </i></span>
+                        <span> Joseph Ledet  <i class="fa fa-caret-down"> </i></span>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="profil.html"><i class="fa fa-user fa-fw"></i> Profile</a></li>
+                        <li><a href="settings.html"><i class="fa fa-user fa-fw"></i> Profile</a></li>
                         <li><a href="courses.html"><i class="fa fa-book fa-fw"></i> Courses</a></li>
                         <li><a href="enroll.html"><i class="fa fa-plus-square fa-fw"></i> Enrollment</a></li>
                         <li class="divider"></li>
                         <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
                     </ul>
-                    <!-- /.dropdown-user -->
                 </li>
             </ul>
         </nav>
@@ -50,21 +53,12 @@
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
-                    <li>
-                        <a href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a>
-                    </li>
-                    <li>
-                        <a class="active-menu" href="courses.html"><i class="fa fa-book"></i> Courses</a>
-                    </li>
-                    <li>
-                        <a href="grades.html"><i class="fa fa-table"></i> Grades</a>
-                    </li>
-                    <li>
-                        <a href="assignments.html"><i class="fa fa-pencil-square-o"></i> Assignments</a>
-                    </li>
-                    <li>
-                        <a href="settings.html"><i class="fa fa-cog"></i> Settings</a>
-                    </li>
+                    <li><a href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a></li>
+                    <li><a class="active-menu" href="courses.html"><i class="fa fa-book"></i> Courses</a></li>
+                    <li><a href="material.html"><i class="fa fa-folder-open"></i> Course Materials</a></li>
+                    <li><a href="grades.html"><i class="fa fa-table"></i> Grades</a></li>
+                    <li><a href="assignments.html"><i class="fa fa-pencil-square-o"></i> Assignments</a></li>
+                    <li><a href="settings.html"><i class="fa fa-cog"></i> Settings</a></li>
                 </ul>
             </div>
         </nav>
@@ -80,39 +74,38 @@
               </div>
               <ul class="nav nav-pills nav-stacked col-md-4">
                 <li><a href="#CS330" data-toggle="pill"><strong>CS 330 - </strong>Into. to Database System</a></li>
-                <li><a href="#CS306" data-toggle="pill"><strong>CS 306 - </strong>Software Engineering</a></li>
               </ul>
               <div class="tab-content">
                 <div class="tab-pane" id="CS330">
                   <div class="col-md-4">
                     <div class="panel panel-danger">
-                      <div class="panel-heading">Introduction to Database System</div>
+                      <div class="panel-heading"><a href="course-details.html">Introduction to Database System</a></div>
                       <div class="panel-body">
                         <table class="table table-responsive">
                           <tbody>
                             <tr>
-                              <td><label class="text-muted">Course Code: </label></td>
+                              <td><label class="text-muted">Course Code : </label></td>
                               <td><label class="text-muted text">CS 330</label></td>
                             </tr>
                             <tr>
-                              <td><label class="text-muted">Lecturer: </label></td>
+                              <td><label class="text-muted">Lecturer : </label></td>
                               <td><label class="text-muted">Joseph Ledet</label></td>
                             </tr>
                             <tr>
-                              <td><label class="text-muted">Assistant: </label></td>
+                              <td><label class="text-muted">Assistant : </label></td>
                               <td><label class="text-muted">Serhan Aksoy</label></td>
                             </tr>
                             <tr>
-                              <td><label class="text-muted">Section: </label></td>
+                              <td><label class="text-muted">Section : </label></td>
                               <td><label class="text-muted">Lecture1</label></td>
                             </tr>
                             <tr>
-                              <td><label class="text-muted">Term: </label></td>
+                              <td><label class="text-muted">Term : </label></td>
                               <td><label class="text-muted">Spring - 2017</label></td>
                             </tr>
                             <tr>
                               <td><label class="text-muted">Syllabus : </label></td>
-                              <td><label class="text-muted"><a href="bb.png" download><i class="fa fa-cloud-download fa-2x"></a></label></td>
+                              <td><label class="text-muted"><a href="bb.png" upload><i class="fa fa-cloud-upload fa-2x"></a></label></td>
                             </tr>
                           </tbody>
                         </table>
@@ -121,7 +114,7 @@
                   </div>
                   <div class="col-md-4">
                     <div class="panel panel-danger">
-                      <div class="panel-heading">Course Members</div>
+                      <div class="panel-heading"><a href="course-students.html">Course Members</a></div>
                       <div class="panel-body">
                         <div class="scroll">
                           <table class="table table-hover table-responsive">
@@ -140,62 +133,12 @@
                               </tr>
                               <tr>
                                 <td><img style="max-height: 30px; max-width: 50px;" src="assets/user.png" alt="" class="circle"></td>
-                                <td><strong>Cok Yakısıklı Koray Ozyurt</strong></td>
+                                <td><strong>Koray Ozyurt</strong></td>
                               </tr>
                               <tr>
                                 <td><img style="max-height: 30px; max-width: 50px;" src="assets/user.png" alt="" class="circle"></td>
                                 <td><strong>Ertugrul Celik</strong></td>
                               </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="CS306">
-                  <div class="col-md-4">
-                    <div class="panel panel-danger">
-                      <div class="panel-heading">Software</div>
-                      <div class="panel-body">
-                        <table class="table table-responsive">
-                          <tbody>
-                            <tr>
-                              <td><label class="text-muted">Course Code: </label></td>
-                              <td><label class="text-muted"> CS 330</label></td>
-                            </tr>
-                            <tr>
-                              <td><label class="text-muted"> Lecturer : </label></td>
-                              <td><label class="text-muted"> Joseph Ledet</label></td>
-                            </tr>
-                            <tr>
-                              <td><label class="text-muted"> Assistant : </label></td>
-                              <td><label class="text-muted"> Serhan Aksoy</label></td>
-                            </tr>
-                            <tr>
-                              <td><label class="text-muted"> Section : </label></td>
-                              <td><label class="text-muted"> Lecture1</label></td>
-                            </tr>
-                            <tr>
-                              <td><label class="text-muted"> Term : </label></td>
-                              <td><label class="text-muted"> Spring - 2017</label></td>
-                            </tr>
-                            <tr>
-                              <td><label class="text-muted"> Syllabus : </label></td>
-                              <td><label class="text-muted"><a href="bb.png" download><i class="fa fa-cloud-download fa-2x"></a></label></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="panel panel-danger">
-                      <div class="panel-heading">Course Members</div>
-                      <div class="panel-body">
-                        <div class="scroll">
-                          <table class="table table-hover table-responsive">
-                            <tbody>
                               <tr>
                                 <td><img style="max-height: 30px; max-width: 50px;" src="assets/user.png" alt="" class="circle"></td>
                                 <td><strong>Mehmet Arici</strong></td>
@@ -210,7 +153,7 @@
                               </tr>
                               <tr>
                                 <td><img style="max-height: 30px; max-width: 50px;" src="assets/user.png" alt="" class="circle"></td>
-                                <td><strong>Cok Yakısıklı Koray Ozyurt</strong></td>
+                                <td><strong>Koray Ozyurt</strong></td>
                               </tr>
                               <tr>
                                 <td><img style="max-height: 30px; max-width: 50px;" src="assets/user.png" alt="" class="circle"></td>
