@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackboard - Course Details</title>
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">BlackBoard</a>
+            </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <span> Joseph Ledet &nbsp<i class="fa fa-caret-down"></i></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="settings.html"><i class="fa fa-user fa-fw"></i> Profile</a></li>
+                        <li><a href="courses.html"><i class="fa fa-book fa-fw"></i> Courses</a></li>
+                        <li><a href="enroll.html"><i class="fa fa-plus-square fa-fw"></i> Enrollment</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li><a href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a></li>
+                    <li><a class="active-menu" href="courses.html"><i class="fa fa-book"></i> Courses</a></li>
+                    <li><a href="courses.html"><i class="fa fa-folder-open"></i> Course Materials</a></li>
+                    <li><a href="grades.html"><i class="fa fa-table"></i> Grades</a></li>
+                    <li><a href="assignments.html"><i class="fa fa-pencil-square-o"></i> Assignments</a></li>
+                    <li><a href="settings.html"><i class="fa fa-cog"></i> Settings</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">Course Detail <small>CS- 330 Intro. to Database System</small></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="panel panel-primary text-center no-boder bg-color-gray">
+                                    <div class="panel-body">
+                                        <i class="fa fa-pencil-square-o fa-5x"></i>
+                                        <h3>2</h3>
+                                    </div>
+                                    <div class="panel-footer back-footer-dgray">
+                                        <a class="white-link" href="course-grades.html"> Grades</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="panel panel-primary text-center no-boder bg-color-dblue">
+                                    <div class="panel-body">
+                                        <i class="fa fa-mortar-board fa-5x"></i>
+                                        <h3>54</h3>
+                                    </div>
+                                    <div class="panel-footer back-footer-dblue">
+                                        <a class="white-link" href="course-students.html">Students</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-danger">
+                          <div class="panel-heading">
+                            <h3 class="panel-title">Course Announcement</h3>
+                          </div>
+                          <div class="panel-body">
+                            <div class="list-group">
+                                <a href="course-anouncement.html" class="list-group-item">Midterm Date
+                                    <span class="badge">yesterday</span>
+                                </a>
+                                <a href="course-anouncement.html" class="list-group-item">Lecture 8
+                                    <span class="badge">yesterday</span>
+                                </a>
+                                <a href="course-anouncement.html" class="list-group-item">Assignment 2
+                                    <span class="badge">3 days ago</span>
+                                </a>
+                                <a href="course-anouncement.html" class="list-group-item">Lecture 7
+                                    <span class="badge">8 days ago</span>
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- Custom Js -->
+    <script src="assets/js/custom-scripts.js"></script>
+
+
+</body>
+
+</html>
